@@ -1,39 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* .poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+/* .poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-body, h1, ul, li, button, input {
+/* .borel-regular {
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+/* .concert-one-regular {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+body, h1, ul, il, button, input{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
-body {
-  font-family: "Poetsen One", sans-serif;
+body{
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  color: #333; 
+  background: linear-gradient(to right, #df5f29, #47200e);
+  color: #333;
 }
 
-.container {
+.container{
   background-color: #fff;
   padding: 20px 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   width: 90%;
-  max-width: 350px;
+  max-width: 400px;
+  text-align: center;
 
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
-h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
+h1{
+   font-family: "Concert One", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   margin-bottom: 20px;
+   font-size: 24px;
+
 }
 
-#new-task {
+#new-task{
   width: calc(100% - 22px);
   padding: 12px;
   margin-bottom: 10px;
@@ -42,70 +88,86 @@ h1 {
   font-size: 16px;
 }
 
-#add-task-btn {
+#add-task-btn{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
   padding: 12px;
   border: none;
-  background-color: #28a745;
-  color: white;
+  background-color: #2ab14a;
+  color: #fff;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  margin-bottom: 10px;
 
   transition: background-color 0.3s;
+  
+  }
+
+
+#add-task-btn:hover{
+  background-color: #208939;
 }
 
-#add-task-btn:hover {
-  background-color: #28a745;
-}
+ul{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 
-ul {
   list-style-type: none;
   padding: 0;
+
 }
 
-li {
+li{
   background-color: #f9f9f9;
   margin-bottom: 10px;
-  padding: 10px  15px;
+  padding: 10px 15px;
   border: 1px solid #ddd;
-  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+
   transition: background-color 0.3s;
 }
 
-li:hover {
+li:hover{
   background-color: #f1f1f1;
 }
 
-li.completed {
+li.completed{
   text-decoration: line-through;
   color: #aaa;
 }
 
-button.delete-btn {
-  background-color: #f95127;
-  color: #fff;
+button.delet-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  padding: 5px 10px;
   border: none;
-  padding: 6px 12px;
-  cursor: pointer;
+  background-color: #c73c2f;
+  color: #fff;
   border-radius: 5px;
+  cursor: pointer;
 
   transition: background-color 0.3s;
 }
 
 button.delete-btn:hover {
-  background-color: #c83c1e;
+  background-color: #a83228;
 }
 
 @keyframes fadeIn {
-  from {
+  from{
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-30px);
   }
-  to {
+  to{
     opacity: 1;
     transform: translateY(0);
   }
